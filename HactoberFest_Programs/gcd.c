@@ -1,6 +1,11 @@
 #include<stdio.h>
 int gcd(int a,int b){
-	//Write code here
+	if(a==0)
+		return b;
+	elseif(b==0)
+		return a;
+	else
+		return gcd(b,a%b);
 }
 int main(){
 	int num1,num2,res=0;
